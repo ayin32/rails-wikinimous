@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <div class="container">
+      <h1 class="header"> <%= link_to "Wikinomous", articles_path %> </h1>
+      <h2 class="new-article"> <%= link_to "New Article", new_article_path %> </h2>
+    </div>
+    <div class="article">
     <%= yield %>
+    </div>
   </body>
 </html>
